@@ -1,0 +1,36 @@
+{
+  "name": "@minar-kotonoha/pi-efficiency-guards",
+  "version": "0.1.0",
+  "description": "Two mechanical guards for pi: block unbounded recursive shell scans, and state a turn's step count so a re-checking turn delivers its answer. Zero prompt cost.",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "guards",
+    "efficiency"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "pi": {
+    "extensions": [
+      "./extensions/pi-efficiency-guards/index.js"
+    ]
+  },
+  "files": [
+    "extensions",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
